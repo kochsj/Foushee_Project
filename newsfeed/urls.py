@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import HomePageView
+from .views import newsfeed_view
 
 urlpatterns = [
-    path('home/', HomePageView.as_view(), name='home')
+    path('newsfeed/', newsfeed_view, name='newsfeed')
 ]

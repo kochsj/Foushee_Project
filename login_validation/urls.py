@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import LoginValidationView
+from .views import login_validation_view
 
 urlpatterns = [
-    path('login/', LoginValidationView.as_view(), name='login')
+    path('login/', login_validation_view, name='login')
 ]

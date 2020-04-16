@@ -31,15 +31,18 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # my apps
+    'login_validation.apps.LoginValidationConfig',
+    'employee_profile.apps.EmployeeProfileConfig',
+    'newsfeed.apps.NewsfeedConfig',
+
+    # django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login_validation.apps.LoginValidationConfig',
-    'employee_profile.apps.EmployeeProfileConfig',
-    'newsfeed.apps.NewsfeedConfig',
 ]
 
 MIDDLEWARE = [
