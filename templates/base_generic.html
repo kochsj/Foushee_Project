@@ -1,0 +1,6 @@
+{% if authorized %}
+    {% include 'nav.html' %}
+    {% block content %}{% endblock content %}
+{% else %}
+    {% include 'login.html' %}
+{% endif %}

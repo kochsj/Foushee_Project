@@ -1,5 +1,7 @@
-from django.views.generic import TemplateView
+from django.shortcuts import render
 
+def login_validation_view(request):
 
-class LoginValidationView(TemplateView):
-    template_name = 'login.html'
+    context = {}
+
+    return render(request, "login.html", context)

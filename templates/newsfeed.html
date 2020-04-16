@@ -1,8 +1,13 @@
-{% extends 'nav.html' %}
+{% extends 'base_generic.html' %}
 
 {% block content %}
-<h1>Hello World</h1>
+    <h1>Hello World. Newsfeed</h1>
+    {% for li in list_of_news %}
+        {% include 'article.html' with value=li %}
+    {% endfor %}
 {% endblock content %}
+
+
 
 
 
