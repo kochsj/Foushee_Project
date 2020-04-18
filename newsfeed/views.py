@@ -9,10 +9,15 @@ from django.views.generic import TemplateView
 # class HomePageView(TemplateView):
 #     template_name = 'newsfeed.html'
 
-def newsfeed_view(request):
+def newsfeed_view(request, validation=False):
 
     context = {}
-    context['authorized'] = True
+    if validation:
+        authorized = True
+    else:
+        authorized = False
+
+    context['authorized'] = validation
 
     list_of_news = []
     list_of_news.append("News article one")
